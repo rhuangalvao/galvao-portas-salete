@@ -37,7 +37,7 @@
 </html>
 
 <script>
-  pinus = [1];
+  pinus = [01];
   pinus_valor = [122];
   eucalipto = [1,2,3,4,5,6,7,8,9,10,11,12,13,17,137,129,111,112,114,117,118,122,123,124,110,134,135];
   angelim = [205,206,207,208,209,210,211,212,213,214,215,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,234,235,237]
@@ -60,8 +60,8 @@
     document.getElementById("portas").innerHTML += "<h3>Porta em Pinus</h3>"
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/pinus.png' width="+largura+" height="+altura+">" +
-          "<h5>01</h5>" +
-          "<h5>R$ "+pinus_valor+",00</h5></div>"
+          "<h5>01 - R$ "+pinus_valor+",00</h5>"
+          // "<h5>R$ "+pinus_valor+",00</h5></div>"
   }
 
   function portasEucalipto() {
@@ -71,26 +71,26 @@
       if (eucalipto[i] >= 1 && eucalipto[i] <= 10 || eucalipto[i] == 17) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+"</h5>" +
-          "<h5>R$ 172,00</h5></div>"
+          "<h5>"+eucalipto[i]+" - R$ 172,00</h5>"
+          // "<h5>R$ 172,00</h5></div>"
       }
       else if (eucalipto[i] == 11 ) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+"</h5>" +
-          "<h5>R$ 186,00</h5></div>"
+          "<h5>"+eucalipto[i]+" - R$ 186,00</h5>"
+          // "<h5>R$ 186,00</h5></div>"
       }
       else if (eucalipto[i] == 12 ) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+"</h5>" +
-          "<h5>R$ 201,00</h5></div>"
+          "<h5>"+eucalipto[i]+" - R$ 201,00</h5>"
+          // "<h5>R$ 201,00</h5></div>"
       }
       else if (eucalipto[i] >= 13 && eucalipto[i] <= 137 && eucalipto[i] != 17) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+"</h5>" +
-          "<h5>R$ 262,00</h5></div>"
+          "<h5>"+eucalipto[i]+" - R$ 262,00</h5>"
+          // "<h5>R$ 262,00</h5></div>"
       }
     }
   }
@@ -101,20 +101,20 @@
       if (angelim[i] == 205) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+angelim[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+angelim[i]+"</h5>" +
-          "<h5>R$ 470,00</h5></div>"
+          "<h5>"+angelim[i]+" - R$ 470,00</h5>"
+          // "<h5>R$ 470,00</h5></div>"
       }
       else if (angelim[i] >= 206 && angelim[i] <= 210) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+angelim[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+angelim[i]+"</h5>" +
-          "<h5>R$ 410,00</h5></div>"
+          "<h5>"+angelim[i]+" - R$ 410,00</h5>"
+          // "<h5>R$ 410,00</h5></div>"
       }
       else if (angelim[i] >= 211 && angelim[i] <= 237) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+angelim[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+angelim[i]+"</h5>" +
-          "<h5>R$ 610,00</h5></div>"
+          "<h5>"+angelim[i]+" - R$ 610,00</h5>"
+          // "<h5>R$ 610,00</h5></div>"
       }
     }
   }
@@ -124,8 +124,8 @@
     for (var i = 0; i < dupla_eucalipto.length; i++) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+dupla_eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+dupla_eucalipto[i]+"</h5>" +
-          "<h5>R$ "+dupla_eucalipto_valor[i]+",00</h5></div>"
+          "<h5>"+dupla_eucalipto[i]+" - R$ "+dupla_eucalipto_valor[i]+",00</h5>"
+          // "<h5>R$ "+dupla_eucalipto_valor[i]+",00</h5></div>"
     }
   }
   function portasDuplaAngelim() {
@@ -134,8 +134,8 @@
     for (var i = 0; i < dupla_angelim.length; i++) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+dupla_angelim[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+dupla_angelim[i]+"</h5>" +
-          "<h5>R$ "+dupla_angelim_valor[i]+",00</h5></div>"
+          "<h5>"+dupla_angelim[i]+" - R$ "+dupla_angelim_valor[i]+",00</h5>"
+          // "<h5>R$ "+dupla_angelim_valor[i]+",00</h5></div>"
     }
   }
   function portasMarcoEucalipto() {
@@ -144,8 +144,8 @@
     for (var i = 0; i < marco_eucalipto.length; i++) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+marco_eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+marco_eucalipto[i]+"</h5>" +
-          "<h5>R$ "+marco_eucalipto_valor[i]+",00</h5></div>"
+          "<h5>"+marco_eucalipto[i]+" - R$ "+marco_eucalipto_valor[i]+",00</h5>"
+          // "<h5>R$ "+marco_eucalipto_valor[i]+",00</h5></div>"
     }
   }
   function portasMarcoAngelim() {
@@ -154,8 +154,8 @@
     for (var i = 0; i < marco_angelim.length; i++) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+marco_angelim[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+marco_angelim[i]+"</h5>" +
-          "<h5>R$ "+marco_angelim_valor[i]+",00</h5></div>"
+          "<h5>"+marco_angelim[i]+" - R$ "+marco_angelim_valor[i]+",00</h5>"
+          // "<h5>R$ "+marco_angelim_valor[i]+",00</h5></div>"
     }
   }
 
