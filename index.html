@@ -42,7 +42,9 @@
   eucalipto = [1,2,3,4,5,6,7,8,9,10,11,12,13,17,137,129,111,112,114,117,118,122,123,124,110,134,135];
   angelim = [205,206,207,208,209,210,211,212,213,214,215,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,234,235,237]
   dupla_eucalipto = [312,329,333];
+  dupla_eucalipto_valor = [420,420,500];
   dupla_angelim = [412,429,433];
+  dupla_angelim_valor = [730,730,770];
   marco_eucalipto = ["M1","M2","M3","M4"];
   marco_eucalipto_valor = [130,136,336,426];
   marco_angelim = ["M9","M10","M11"];
@@ -62,7 +64,7 @@
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/pinus.png' width="+largura+" height="+altura+">" +
           "<h5>01</h5>" +
-          "<h5>R$ 122,00</h5></div>"
+          "<h5>R$ "+pinus_valor+",00</h5></div>"
   }
 
   function portasEucalipto() {
@@ -123,36 +125,20 @@
     document.getElementById("portas").innerHTML = "<div></div>"
     document.getElementById("portas").innerHTML += "<h3>Portas com Moldura Dupla em Eucalipto</h3>"
     for (var i = 0; i < dupla_eucalipto.length; i++) {
-      if (dupla_eucalipto[i] == 312 || dupla_eucalipto[i] == 329) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+dupla_eucalipto[i]+".png' width="+largura+" height="+altura+">" +
           "<h5>"+dupla_eucalipto[i]+"</h5>" +
-          "<h5>R$ 420,00</h5></div>"
-      }
-      else if (dupla_eucalipto[i] == 333) {
-        document.getElementById("portas").innerHTML +=
-          "<div class='col'><img class='center' src='public/img/"+dupla_eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+dupla_eucalipto[i]+"</h5>" +
-          "<h5>R$ 500,00</h5></div>"
-      }
+          "<h5>R$ "+dupla_eucalipto_valor[i]+",00</h5></div>"
     }
   }
   function portasDuplaAngelim() {
     document.getElementById("portas").innerHTML = "<div></div>"
     document.getElementById("portas").innerHTML += "<h3>Portas com Moldura Dupla em Angelim</h3>"
     for (var i = 0; i < dupla_angelim.length; i++) {
-      if (dupla_angelim[i] == 412 || dupla_angelim[i] == 429) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+dupla_angelim[i]+".png' width="+largura+" height="+altura+">" +
           "<h5>"+dupla_angelim[i]+"</h5>" +
-          "<h5>R$ 730,00</h5></div>"
-      }
-      else if (dupla_angelim[i] == 433) {
-        document.getElementById("portas").innerHTML +=
-          "<div class='col'><img class='center' src='public/img/"+dupla_angelim[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+dupla_angelim[i]+"</h5>" +
-          "<h5>R$ 770,00</h5></div>"
-      }
+          "<h5>R$ "+dupla_angelim_valor[i]+",00</h5></div>"
     }
   }
   function portasMarcoEucalipto() {
