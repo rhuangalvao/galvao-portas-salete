@@ -1,51 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-  .button {
-  background-color: #D3D3D3; /* Green */
-  border: none;
-  color: black;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  }
-  html, body {
-    overflow-x: hidden;
-  }
-  .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
-  h1 {
-    text-align: center;
-  }
-  h3 {
-    text-align: center;
-  }
-  h5 {
-    text-align: center;
-  }
-  </style>
+  <link rel="stylesheet" href="public/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 </head>
 <body>
   <div class="row">
-    <div class="col">
+    <div class="col corfundo">
       <h3>Portas Salete</h3>
     </div>
     <div class="col-10">
-      <h1>Galvão (42)9 9827-8677</h1>
     </div>
   </div>
   <!-- <div class="container"> -->
     <div class="row">
-      <div class="col">
+      <div class="col corfundo">
         <div class="row">
           <button class="button" onclick="portasPinus()">Pinus</button>
           <button class="button" onclick="portasEucalipto()">Eucalipto</button>
@@ -54,11 +23,10 @@
           <button class="button" onclick="portasDuplaAngelim()">Moldura Dupla Angelim</button>
           <button class="button" onclick="portasMarcoEucalipto()">Marco Eucalipto</button>
           <button class="button" onclick="portasMarcoAngelim()">Marco Angelim</button>
-
+          <p>Galvão</p>
+          <p>(42)9 9827-8677</p>
+          <p>galvaoluiz3@gmail.com</p>
         </div>
-        <!-- <h5>Galvão</h5>
-        <h5>(42)9 9827-8677</h5>
-        <h5>galvaoluiz3@gmail.com</h5> -->
       </div>
       <div class="col-10">
           <div class="row" id="portas"></div>
@@ -80,12 +48,13 @@
   marco_angelim = ["M9","M10","M11"];
   marco_angelim_valor = [363,630,900];
 
-
   portas = [1,2,3,4,5,6];
   valores = [122,165,165,165,165,80];
 
   largura = 217;
   altura = 515;
+
+  portasPinus();
 
   function portasPinus() {
     document.getElementById("portas").innerHTML = "<div></div>"
