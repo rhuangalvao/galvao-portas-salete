@@ -40,6 +40,7 @@
   pinus = [01];
   pinus_valor = [122];
   eucalipto = ["01","02","03","04","05","06","07","08","09",10,11,12,13,17,137,129,111,112,114,117,118,122,123,124,110,134,135];
+  eucalipto_desc = ["Almofadada","Vigia Pequena","Vigia Grande com Janela","Três Vidros Fixo","Cozinha","Vitrô","Vitrô uma Almofada","Vitrô duas Almofadas","Vitrô três Almofadas","Meio Vitrô","Torneada","Bico Diamante","Bico Horizontal","Raio de Sol","Dois Frisos","","","","","","","","","","","Meio Bico","Um Friso"]
   angelim = [205,206,207,208,209,210,211,212,213,214,215,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,234,235,237]
   dupla_eucalipto = [312,329,333];
   dupla_eucalipto_valor = [420,420,500];
@@ -60,7 +61,8 @@
     document.getElementById("portas").innerHTML += "<h3>Porta em Pinus</h3>"
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/pinus.png' width="+largura+" height="+altura+">" +
-          "<h5>01 - R$ "+pinus_valor+",00</h5>"
+          "<h5>01 - R$ "+pinus_valor+",00</h5>" +
+          "<h5>Almofadada</h5>"
           // "<h5>R$ "+pinus_valor+",00</h5></div>"
   }
 
@@ -71,25 +73,29 @@
       if (eucalipto[i] >= 1 && eucalipto[i] <= 10 || eucalipto[i] == 17) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+" - R$ 172,00</h5>"
+          "<h5>"+eucalipto[i]+" - R$ 172,00</h5>" +
+          "<h5>"+eucalipto_desc[i]+"</h5>"
           // "<h5>R$ 172,00</h5></div>"
       }
       else if (eucalipto[i] == 11 ) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+" - R$ 186,00</h5>"
+          "<h5>"+eucalipto[i]+" - R$ 186,00</h5>" +
+          "<h5>"+eucalipto_desc[i]+"</h5>"
           // "<h5>R$ 186,00</h5></div>"
       }
       else if (eucalipto[i] == 12 ) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+" - R$ 201,00</h5>"
+          "<h5>"+eucalipto[i]+" - R$ 201,00</h5>" +
+          "<h5>"+eucalipto_desc[i]+"</h5>"
           // "<h5>R$ 201,00</h5></div>"
       }
       else if (eucalipto[i] >= 13 && eucalipto[i] <= 137 && eucalipto[i] != 17) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+" - R$ 262,00</h5>"
+          "<h5>"+eucalipto[i]+" - R$ 262,00</h5>" +
+          "<h5>"+eucalipto_desc[i]+"</h5>"
           // "<h5>R$ 262,00</h5></div>"
       }
     }
