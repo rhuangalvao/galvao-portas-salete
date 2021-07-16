@@ -23,6 +23,8 @@
           <button class="button" onclick="portasDuplaAngelim()">Moldura Dupla Angelim</button>
           <button class="button" onclick="portasMarcoEucalipto()">Marco Eucalipto</button>
           <button class="button" onclick="portasMarcoAngelim()">Marco Angelim</button>
+          <button class="button" onclick="tabelaPortas()">Tabela Portas</button>
+          <button class="button" onclick="tabelaMangueiras()">Tabela Mangueiras</button>
           <p>Galvão</p>
           <p>(42)9 9827-8677</p>
           <p>galvaoluiz3@gmail.com</p>
@@ -45,11 +47,11 @@
   dupla_eucalipto = [312,329,333];
   dupla_eucalipto_valor = [420,420,500];
   dupla_angelim = [412,429,433];
-  dupla_angelim_valor = [730,730,770];
+  dupla_angelim_valor = [770,770,870];
   marco_eucalipto = ["M1","M2","M3","M4"];
-  marco_eucalipto_valor = [130,136,336,426];
+  marco_eucalipto_valor = [138,144,340,432];
   marco_angelim = ["M9","M10","M11"];
-  marco_angelim_valor = [363,630,900];
+  marco_angelim_valor = [378,648,942];
 
   largura = 217;
   altura = 515;
@@ -73,28 +75,28 @@
       if (eucalipto[i] >= 1 && eucalipto[i] <= 10 || eucalipto[i] == 17) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+" - R$ 172,00</h5>" +
+          "<h5>"+eucalipto[i]+" - R$ 176,00</h5>" +
           "<h5>"+eucalipto_desc[i]+"</h5>"
           // "<h5>R$ 172,00</h5></div>"
       }
       else if (eucalipto[i] == 11 ) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+" - R$ 186,00</h5>" +
+          "<h5>"+eucalipto[i]+" - R$ 196,00</h5>" +
           "<h5>"+eucalipto_desc[i]+"</h5>"
           // "<h5>R$ 186,00</h5></div>"
       }
       else if (eucalipto[i] == 12 ) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+" - R$ 201,00</h5>" +
+          "<h5>"+eucalipto[i]+" - R$ 206,00</h5>" +
           "<h5>"+eucalipto_desc[i]+"</h5>"
           // "<h5>R$ 201,00</h5></div>"
       }
       else if (eucalipto[i] >= 13 && eucalipto[i] <= 137 && eucalipto[i] != 17) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+eucalipto[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+eucalipto[i]+" - R$ 262,00</h5>" +
+          "<h5>"+eucalipto[i]+" - R$ 266,00</h5>" +
           "<h5>"+eucalipto_desc[i]+"</h5>"
           // "<h5>R$ 262,00</h5></div>"
       }
@@ -119,7 +121,7 @@
       else if (angelim[i] >= 211 && angelim[i] <= 237) {
         document.getElementById("portas").innerHTML +=
           "<div class='col'><img class='center' src='public/img/"+angelim[i]+".png' width="+largura+" height="+altura+">" +
-          "<h5>"+angelim[i]+" - R$ 610,00</h5>"
+          "<h5>"+angelim[i]+" - R$ 670,00</h5>"
           // "<h5>R$ 610,00</h5></div>"
       }
     }
@@ -163,6 +165,18 @@
           "<h5>"+marco_angelim[i]+" - R$ "+marco_angelim_valor[i]+",00</h5>"
           // "<h5>R$ "+marco_angelim_valor[i]+",00</h5></div>"
     }
+  }
+  function tabelaPortas() {
+    document.getElementById("portas").innerHTML = "<div></div>"
+    document.getElementById("portas").innerHTML += "<h3>Tabela de portas</h3>"
+        document.getElementById("portas").innerHTML +=
+          "<div class='col'><img class='center' src='public/img/tabelaporta.png' width=400 height=500>"
+  }
+  function tabelaMangueiras() {
+    document.getElementById("portas").innerHTML = "<div></div>"
+    document.getElementById("portas").innerHTML += "<h3>Tabela de mangueiras</h3>"
+        document.getElementById("portas").innerHTML +=
+          "<div class='col'><img class='center' src='public/img/tabelamangueira.png' width=400 height=500>"
   }
 
 </script>
